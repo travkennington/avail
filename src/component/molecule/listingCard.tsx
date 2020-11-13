@@ -88,7 +88,8 @@ const ListingCard = ({
         <ListingCardContainer>
             <VehicleImage>
                 <div style={{width: '120px'}}>
-                    <img src={getVehicleImageUrl(category)} 
+                    <img src={getVehicleImageUrl(category)}
+                    alt={`${category} vehicle`}
                     style={{
                         maxWidth: '100%',
                         height: 'auto'

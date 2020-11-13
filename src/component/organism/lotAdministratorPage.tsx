@@ -77,7 +77,7 @@ const LotAdministratorPage = () => {
                 setBookings(upcomingBookings)
             })
         }
-    }, [])
+    }, [bookings.length])
 
     useEffect(() => {
         if (!listings.length) {
@@ -87,7 +87,7 @@ const LotAdministratorPage = () => {
                 setListings(currentListings)
             })
         }
-    }, [])
+    }, [listings.length])
 
     return (
         <LotAdministratorStyled>
